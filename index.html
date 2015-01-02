@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link type="text/css" href="mystyle.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <title>Computer Science Portfolio</title>
+    <script type="text/javascript">// Check for the various File API support.
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            // Great success! All the File APIs are supported.
+        } else {
+            alert('The File APIs are not fully supported in this browser.');
+        }
+    </script>
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 800);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav id="navBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="portfolio">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home" target="_self">Home</a></li>
+                    <li><a href="#about" target="_self">About</a></li>
+                    <li><a href="#education" target="_self">Education</a></li>
+                    <li><a href="#work" target="_self">Work Experience</a></li>
+                    <li><a href="#projects" target="_self">Projects</a></li>
+                    <li><a href="#contact" target="_self">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="test">
+        <div class="spacer" id="home"></div>
+        <h1>Tejong Lim</h1>
+        <div id="subtitle">Computer Science Portfolio</div>
+
+        <div class="row">
+            <div id="about" class="spacer"></div>
+            <h2>About</h2>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <br />
+                <div>This webpage serves as documentation of the work I have done in various areas, so that I may refer others to this page to display my computer science knowledge and programming ability.</div>
+                <br />
+                <div>As an undergraduate senior at the University of Chicago, I am studying for a <a href="http://collegecatalog.uchicago.edu/thecollege/biologicalsciences/#requirementsforthebachelorofartsdegreeinthebiologicalsciences" target="_blank">Bachelor of Arts degree in Biological Sciences</a> in addition to a <a href="http://collegecatalog.uchicago.edu/thecollege/computerscience/#minorprogramincomputerscience" target="_blank">Computer Science minor</a>. While I originally planned to study only biology, I discovered my passion for computer science in the summer after my sophomore year and am now in search of a full-time position in software engineering or web development</div>
+                <br />
+                <div>I am proficient in C, Python, R, and Racket/Scheme and I also have experience programming in C++ and Java. Additionally, I am skilled in using HTML/CSS and Javascript/AJAX (Node.js).</div>
+                <div>I also have used subversion (SVN) and Git for version control on several projects.</div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div id="education" class="spacer"></div>
+        <div class="row">
+            <h2>Education</h2>
+            <div id="uchicago">
+                <div class="col-md-12">
+                    <h3>University of Chicago</h3>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div>The following are the computer science and quantitative biology courses I have taken or am currently taking during my enrollment at UChicago.</div>
+                    <ul class="courses">
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=CMSC%2023300" target="_blank">CMSC 23300</a> - Networks and Distributed Systems</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=CMSC%2022300" target="_blank">CMSC 22300</a> - Functional Programming</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=CMSC%2022001" target="_blank">CMSC 22001</a> - Software Construction</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=CMSC%2023200" target="_blank">CMSC 23200</a> - Introduction to Computer Security</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=CMSC%2015400" target="_blank">CMSC 15400</a> - Introduction to Computer Systems</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=CMSC%2015200" target="_blank">CMSC 15200</a> - Introduction to Computer Science-2</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=CMSC%2015100" target="_blank">CMSC 15100</a> - Introduction to Computer Science-1</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=MATH%2019620" target="_blank">MATH 19620</a> - Linear Algebra</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=BIOS%2020151" target="_blank">BIOS 20151</a> - Introduction to Quantitative Modeling in Biology (Basic)</li>
+                        <li><a href="http://collegecatalog.uchicago.edu/search/?P=BIOS%2027700" target="_blank">BIOS 27700</a> - Quantitative Biology: Data Analysis and Modeling</li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div id="unc">
+                <div class="col-md-12">
+                    <h3>University of North Carolina, Chapel Hill</h3>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div>I have also taken a summer course at the University of North Carolina, Chapel Hill.</div>
+                    <ul class="courses">
+                        <li><a href="http://summer.unc.edu/courses/summer-2015-course-listings-by-department-or-school-3/computer-science-2/" target="_blank">COMP 116</a> - Introduction to Scientific Programming</li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+
+        <div id="work" class="spacer"></div>
+        <div class="row">
+            <h2>Work Experience</h2>
+            <div class="col-md-12">
+                <h3>University of Chicago Research Computing Center Technical Support</h3>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div>Since June 2014, I have worked for the UChicago RCC as a technical support assistant. I typically manage account requests for the Midway supercomputer cluster and respond to user troubleshooting issues with Midway. I also worked on various projects, described further below, and assisted in coordinating RCC events.</div>
+                <br />
+                <div>More information on the UChicago Research Computing Center can be found <a href="https://rcc.uchicago.edu/" target="_blank">here</a>.</div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div id="projects" class="spacer"></div>
+        <div class="row">
+            <h2>Projects</h2>
+            <div class="col-md-12">
+                <h3>File Upload Template</h3>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div>This is a template for a file upload web service, created for the University of Chicago Research Computing Center.</div>
+            </div>
+            <div class="col-md-4">
+                See <a href="https://github.com/rcc-uchicago/submit" target="_blank">this GitHub repository</a> for the source code.
+            </div>
+
+            <div class="col-md-12">
+                <h3>Stray Cat Crossing</h3>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div>Stray Cat Crossing is an indie horror adventure game created with RPG Maker VX Ace under the pseudonym Jetpackgone and in collaboration with artist and musician Jurlo.</div>
+                <br />
+                <div>Scripts are written in Ruby and include both modified and original scripts. See <a>here</a> for the original scripts used in the game.</div>
+                <br />
+                <div>See more information about the game at its <a href="http://rpgmaker.net/games/6962/" target="_blank">download site</a> or <a href="http://straycatcrossing.tumblr.com/" target="_blank">development blog</a>.</div>
+            </div>
+            <div class="col-md-4">
+                <a href="http://rpgmaker.net/games/6962/" target="_blank"><img src="http://i.imgur.com/YbhtjWu.gif"></a>
+            </div>
+        </div>
+
+        <div id="contact" class="spacer"></div>
+        <div class="row">
+            <h2>Contact</h2>
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                Phone: (484) 560 5890
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                Email: limt@uchicago.edu
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+
+</body> 
+</html>
