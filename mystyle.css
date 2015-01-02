@@ -1,0 +1,61 @@
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: #777;
+    -webkit-font-smoothing: antialiased;
+    background: #008080;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    color: #008080;
+    font-size: 60px;
+    background: space;
+}
+
+h2 {
+    color: #008080;
+    border-bottom: solid;
+    border-bottom-color: #008080;
+    margin: 10px;
+}
+
+h3 {
+    color: #3ea99f;
+}
+
+ul {
+    margin: 20px;
+}
+
+.courses {
+    padding-left: 50px;
+}
+
+.spacer {
+    margin-bottom: 80px;
+}
+
+#subtitle {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 20px;
+    color: #3ea99f;
+}
+
+.date {
+    font-size: 14px;
+}
+
+#portfolio {
+    color: white;
+}
+
+#test {
+    background-color: #ebf4fa;
+}
