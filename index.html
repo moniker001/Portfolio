@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link type="text/css" href="mystyle.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="dist/css/font-awesome.css" rel="stylesheet" />
+    <link type="text/css" href="dist/css/mystyle.css" rel="stylesheet" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <title>Computer Science Portfolio</title>
     <script type="text/javascript">// Check for the various File API support.
@@ -31,6 +32,7 @@
         });
     </script>
 </head>
+
 <body>
     <nav id="navBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -60,6 +62,23 @@
         <div class="spacer" id="home"></div>
         <h1>Tejong Lim</h1>
         <div id="subtitle">Computer Science Portfolio</div>
+
+        <div id="audio-player" class="audio-player-wrapper">
+            <div class="audio-player-image">
+                <span class="audio-player-song-name"></span>
+            </div>
+
+            <div class="audio-player-controls">
+                <span class="audio-player-progress">
+                    <span class="audio-player-progress-bar"></span>
+                </span>
+                <span class="audio-player-button-wrappers">
+                    <a role="button" class="audio-player-button small icon-backward"></a>
+                    <a role="button" class="audio-player-button audio-player-place-pause-button icon-play"></a>
+                    <a role="button" class="audio-player-button small icon-forward"></a>
+                </span>
+            </div>
+        </div>
 
         <div class="row">
             <div id="about" class="spacer"></div>
@@ -154,7 +173,7 @@
             <div class="col-md-6">
                 <div>Stray Cat Crossing is an indie horror adventure game created with RPG Maker VX Ace under the pseudonym Jetpackgone and in collaboration with artist and musician Jurlo.</div>
                 <br />
-                <div>Scripts are written in Ruby and include both modified and original scripts. See <a>here</a> for the original scripts used in the game.</div>
+                <div>Scripts are written in Ruby and include both modified and original scripts. See <a href="https://github.com/moniker001/rpg-maker-scripts">this repository</a> for the original scripts used in the game.</div>
                 <br />
                 <div>See more information about the game at its <a href="http://rpgmaker.net/games/6962/" target="_blank">download site</a> or <a href="http://straycatcrossing.tumblr.com/" target="_blank">development blog</a>.</div>
             </div>
@@ -178,6 +197,7 @@
         <div class="spacer"></div>
     </div>
 
+    <script src="dis/js/index.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="dist/js/bootstrap.js"></script>
 
